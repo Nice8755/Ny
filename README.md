@@ -66,8 +66,8 @@ end)
 
 -- Teleport Player
 
-local Tab = Window:NewTab("Player")
-local Player = Tab:NewSection("Spawn Player")
+local Tab = Window:NewTab("Teleport Player")
+local Player = Tab:NewSection("Teleport Player")
 
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
     table.insert(Plr,v.Name) 
