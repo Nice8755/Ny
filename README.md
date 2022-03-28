@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("BlueSky", colors)
-
+Plr = {}
 -- OP
 
 local Tab = Window:NewTab("OP")
@@ -61,6 +61,28 @@ SpeedWalk:NewToggle("SpeedWalk", "ToggleInfo", function(state)
     else
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Nice8755/sw-/main/README.md"))()("Toggle Off")
     end
+end)
+
+
+-- Teleport Player
+
+local Tab = Window:NewTab("Player")
+local Player = Tab:NewSection("Spawn Player")
+
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+    table.insert(Plr,v.Name) 
+end
+local drop = Player:NewDropdown("Select Player!", "Click To Select", Plr, function(t)
+   PlayerTP = t
+end)
+Player:NewButton("Click To TP", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+end)
+Player:NewToggle("Auto Tp", "", function(t)
+_G.TPPlayer = t
+while _G.TPPlayer do wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+end
 end)
 
 
