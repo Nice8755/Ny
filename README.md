@@ -29,11 +29,11 @@ Teleport:NewButton("SafezonePart Store", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").GameStuff.SafezonePart.TeleportPart.CFrame
 end)
 
-Teleport:NewButton("WarningFromTheFutureGokuBlackTeleporter Lv.100", "", function()
+Teleport:NewButton("WarningFromTheFutureGokuBlack Lv.100", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").GameStuff.WarningFromTheFutureGokuBlackTeleporter.TeleportPart.CFrame
 end)
 
-Teleport:NewButton("EternalHorrorBrolyTeleporter Lv.350", "", function()
+Teleport:NewButton("EternalHorrorBroly Lv.350", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").GameStuff.EternalHorrorBrolyTeleporter.TeleportPart.CFrame
 end)
 
