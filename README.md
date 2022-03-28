@@ -26,7 +26,7 @@ local Tab = Window:NewTab("Teleport")
 local Teleport = Tab:NewSection("Teleport")
 
 Teleport:NewButton("SafezonePart Store", "", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").GameStuff.SafezonePart.TeleportPart.CFrame
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").GameStuff.SafezonePart.CFrame
 end)
 
 Teleport:NewButton("WarningFromTheFutureGokuBlack Lv.100", "", function()
